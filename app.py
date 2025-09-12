@@ -135,7 +135,7 @@ def update_output(selected_milestone, contents):
 
         # Preprocesamiento de datos
         df_filtered = df_filtered.dropna(subset=['Dias_Hasta_Aprobacion', 'Estado_Aprobacion'])
-        df_filtered['Estado_Aprobacion'] = df_filtered['Estado_Aprobacion'].astype(int)
+        df_filtered['Estado_Aprobacion'] = pd.to_numeric(df_filtered['Estado_Aprobacion'], errors='coerce').fillna(0).astype(int)
         
         # Verifica que haya al menos algunos eventos (aprobaciones)
         if df_filtered['Estado_Aprobacion'].sum() == 0:
