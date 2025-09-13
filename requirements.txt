@@ -1,8 +1,8 @@
 streamlit==1.32.0
-pandas==2.2.2
+pandas==2.3.2
 lifelines==0.27.8
 plotly==5.18.0
-numpy==1.24.3
+numpy==1.26.4
 scipy==1.10.1
 --only-binary=:all:
 
