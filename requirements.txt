@@ -3,5 +3,5 @@ pandas==2.2.2
 lifelines==0.27.8
 plotly==5.18.0
 numpy==1.26.4
-scipy==1.13.0
+scipy>=1.10.0,<1.14.0
 
